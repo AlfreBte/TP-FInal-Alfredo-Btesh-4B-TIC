@@ -58,13 +58,6 @@ public class ObjectManager : MonoBehaviour
             Cubes[i].SetActive(false);
         }
     }
-    void activateAll()
-    {
-        for (int i = 0; i < Cubes.Length; i++)
-        {
-            Cubes[i].SetActive(true);
-        }
-    }
     void ActivateByIndex(int index)
     {
         Cubes[index].SetActive(true);
