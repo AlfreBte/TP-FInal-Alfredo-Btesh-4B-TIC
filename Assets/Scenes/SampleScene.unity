@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd14ae3ccf9aa42869008c4511f83e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cubes:
+  Comida:
   - {fileID: 612736524}
   - {fileID: 299848210}
   - {fileID: 1106757085}

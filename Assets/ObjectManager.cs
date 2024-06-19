@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectManager : MonoBehaviour
 {
-    public GameObject[] Cubes;
+    public GameObject[] Comida;
     public int currentIndex = -1;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class ObjectManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             currentIndex++;
-            if (currentIndex < Cubes.Length)
+            if (currentIndex < Comida.Length)
             {
                 DeactivateAll();
                 ActivateByIndex(currentIndex);
@@ -42,7 +42,7 @@ public class ObjectManager : MonoBehaviour
             }
             else
             {
-                currentIndex = Cubes.Length - 1;
+                currentIndex = Comida.Length - 1;
                 DeactivateAll();
                 ActivateByIndex(currentIndex);
             }
@@ -53,14 +53,14 @@ public class ObjectManager : MonoBehaviour
 
     void DeactivateAll()
     {
-        for (int i = 0; i < Cubes.Length; i++)
+        for (int i = 0; i < Comida.Length; i++)
         {
-            Cubes[i].SetActive(false);
+            Comida[i].SetActive(false);
         }
     }
     void ActivateByIndex(int index)
     {
-        Cubes[index].SetActive(true);
+        Comida[index].SetActive(true);
     }
 }
 
